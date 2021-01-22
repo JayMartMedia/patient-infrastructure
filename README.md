@@ -2,12 +2,12 @@
 
 Read more about this project on the [patient-js](https://github.com/JayMartMedia/patient-js) repository. 
 
-This Spring application connects to a PostgreSQL database and presents a REST API which is used by the patient-js web application. 
+This infrastructure repo creates a PostgreSQL docker container to be used be the [patient-service](https://github.com/JayMartMedia/patient-service) Spring application. It also contains an NGINX configuration file for setting up a reverse proxy which forwards external port 80 to the respecive internal ports used by the patient-js React application and patient-service Spring application.
 
 ## Tools Used
-+ #### Backend [patient-service](https://github.com/JayMartMedia/patient-service)
-    + [Spring Boot](https://spring.io/projects/spring-boot) - Popular Java framework for building REST APIs
-    + [PostgreSQL](https://www.postgresql.org/) - Open source relational database system
-    
++ #### Infrastructure [patient-infrastructure](https://github.com/JayMartMedia/patient-infrastructure)
+    + [Docker](https://www.docker.com/) - Containerization tool used for deployment flexibility
+    + [NGINX](https://www.nginx.com/) - Open source tool used for all things networking, used to set up a reverse proxy in this project
+
 # Starting the Application
 View the [Starting the Application](https://github.com/JayMartMedia/patient-js#starting-the-application) section on the patient-js readme for information about starting the application.
